@@ -16,7 +16,7 @@ public class Main {
         printHello(Username);
         int x= 20;
         int y= 10;
-        System.out.println("Do you know that 20 + 10 is "+ (x+y));
+        System.out.println(multiplying(x,y));
 
 
 
@@ -27,10 +27,13 @@ public class Main {
 
 
         public static void printHello(String Username){
+
         System.out.println("Hello "+ Username);
         }
 
-        public static  int multiplyint(int xvalue, int yvalue){
+        public static  int multiplying(int x, int y){
+        return x*y;
+
         
         }
 

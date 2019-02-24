@@ -10,7 +10,7 @@ public class Main {
         String Username;
 
 
-        printGreetings("World");
+        Greetings();
         System.out.println("Hi! What is your name?");
         Username = keyboard.nextLine();
         printHello(Username);
@@ -20,6 +20,7 @@ public class Main {
         double zValue = 60;
         double K= 3.14;
         double L= 5.16;
+
         System.out.println(printHello (Username));
         System.out.println(multiplying(x, y));
         System.out.println(division(pValue, zValue));
@@ -29,8 +30,8 @@ public class Main {
 
     }
 
-    public static void printGreetings(String noun) {
-        System.out.println("Hello " + noun);
+    public static void Greetings(){
+        System.out.println("Hello World");
     }
 
 

@@ -18,8 +18,13 @@ public class Main {
         int y = 10;
         double pValue = 100;
         double zValue = 60;
+        double K= 3.14;
+        double L= 5.16;
+        System.out.println(printHello (Username));
         System.out.println(multiplying(x, y));
         System.out.println(division(pValue, zValue));
+
+
 
 
     }
@@ -29,18 +34,21 @@ public class Main {
     }
 
 
-    public static void printHello(String Username) {
+    public static String printHello(String Username) {
 
-        System.out.println("Hello " + Username);
+        return "Hello "+ Username +"!";
     }
 
     public static int multiplying(int x, int y) {
+
         return x * y;
     }
 
     public static double division(double pValue, double zValue) {
         return pValue/zValue;
     }
+
+
 
 
 

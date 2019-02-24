@@ -20,10 +20,14 @@ public class Main {
         double zValue = 60;
         double K= 3.14;
         double L= 5.16;
+        String firstWord= "Hello";
+        String secondWord= "Galaxy";
 
         System.out.println(printHello (Username));
-        System.out.println(multiplying(x, y));
-        System.out.println(division(pValue, zValue));
+        System.out.println("The product of "+x+ " and "+ y + " is "+multiplying(x, y));
+        System.out.println("The division of "+ pValue+" and "+zValue+" is "+division(pValue, zValue));
+        System.out.println("The larger number is "+maxnumber(K,L));
+        System.out.println(twoWords(firstWord,secondWord));
 
 
 
@@ -48,6 +52,19 @@ public class Main {
     public static double division(double pValue, double zValue) {
         return pValue/zValue;
     }
+    public static double maxnumber(double K, double L) {
+        if (K>L){
+            return K;
+        }
+        else {
+            return L;
+        }
+
+    }
+    public static String twoWords(String firstWord, String secondWord){
+        return (secondWord +" "+ firstWord);
+    }
+
 
 
 
